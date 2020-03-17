@@ -1,0 +1,12 @@
+dependencies {
+    compile project(":common-swagger")
+    compile project(":customer-backend")
+    compile project(":customer-web-api")
+   runtime("com.h2database:h2:1.3.176")
+    
+    compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    compile "org.springframework.hateoas:spring-hateoas:0.25.0.RELEASE"
+}
+
+apply plugin: "org.springframework.boot"
